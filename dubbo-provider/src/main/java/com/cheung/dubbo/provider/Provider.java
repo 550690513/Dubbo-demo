@@ -5,6 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import java.io.IOException;
 
 /**
+ * 服务提供方
  *
  * @author Cheung
  * @date 2017/12/22

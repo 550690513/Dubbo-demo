@@ -4,6 +4,8 @@ import com.cheung.dubbo.api.HelloService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
+ * 服务调用方2
+ *
  * @author Cheung
  * @date 2017/12/22
  */
@@ -25,7 +27,7 @@ public class Consumer2 {
 
 		// 调用100次
 		for (int i = 0; i < 100; i++) {
-			System.out.println("-->" + i);
+			System.out.println("Consumer2-->" + i);
 			// 远程调用方法
 			String result = helloService.sayHello(NAME);
 			// 打印结果
