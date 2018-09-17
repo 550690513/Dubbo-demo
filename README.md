@@ -15,4 +15,4 @@ Dubbo与Zookeeper、Spring框架的整合demo，实现服务提供方与消费�
 
 >* 2、启动顺序：dubbo-provider；dubbo-consumer1；dubbo-consumer2；
 
->* 3、dubbo-admin.war为监控系统，单独在web容器中启动即可，url：http://ip:port/dubbo-admin/
+>* 3、dubbo-admin.war为监控系统，单独在web容器中启动即可，url：http://ip:port/dubbo-admin/，用户名：root、密码：root
