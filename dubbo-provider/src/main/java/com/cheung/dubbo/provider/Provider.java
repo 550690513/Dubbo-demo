@@ -15,7 +15,7 @@ public class Provider {
 	private static final String NAME = "provider";
 
 	public static void main(String[] args) throws IOException {
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("provider.xml");
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("dubbo-provider.xml");
 		context.start();
 		System.out.println("服务提供方已启动---" + NAME);
 

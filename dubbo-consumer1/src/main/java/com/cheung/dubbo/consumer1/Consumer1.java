@@ -15,7 +15,7 @@ public class Consumer1 {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("consumer1.xml");
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("dubbo-consumer1.xml");
 		context.start();
 
 		System.out.println("服务消费方已启动---" + NAME);
