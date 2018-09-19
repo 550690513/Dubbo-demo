@@ -1,21 +1,21 @@
-package com.cheung.dubbo.consumer2;
+package com.cheung.dubbo.consumer1;
 
 import com.cheung.dubbo.api.HelloService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * 服务调用方2
+ * 服务调用方1
  *
  * @author Cheung
  * @date 2017/12/22
  */
-public class Consumer2 {
+public class Consumer1Test {
 
-	private static final String NAME = "consumer2";
+	private static final String NAME = "consumer1";
 
 	public static void main(String[] args) throws InterruptedException {
 
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("dubbo-consumer2.xml");
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("dubbo-config.xml");
 		context.start();
 
 		System.out.println("服务消费方已启动---" + NAME);
@@ -27,7 +27,7 @@ public class Consumer2 {
 
 		// 调用100次
 		for (int i = 0; i < 100; i++) {
-			System.out.println("Consumer2-->" + i);
+			System.out.println("Consumer1Test-->" + i);
 			// 远程调用方法
 			String result = helloService.sayHello(NAME);
 			// 打印结果
